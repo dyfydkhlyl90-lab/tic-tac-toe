@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #1e293b, #0f172a); */
+    background-color: darkblue;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* الاسكور */
+h2 {
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #1c100d;
+    padding: 10px 20px;
+    height: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+/* حاوية اللعبة */
+.game {
+    width: 78vw;              /* توسعة محسوبة */
+    max-width: 720px;         /* تمنع اللزق على اللابتوب */
+    height: 82vh; 
+    max-height: 820px;
+    /* background-color: #020617; */
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); */
+    margin:auto;
+}
+
+/* العنوان */
+.game .title {
+    height: 64px;
+    background-color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+/* شبكة اللعب */
+.squares {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+/* المربعات */
+.square {
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(56px, 8vw, 120px);
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    transition: background-color 0.25s, transform 0.1s;
+    border: none;
+    outline: none;
+
+}
+
+/* hover */
+.square:hover {
+    /* background-color:  #1e40af; */
+}
+
+/* موبايل */
+@media (max-width: 480px) {
+    .game {
+        width: 92vw;
+        height: 86vh;
+    }
+
+    .square {
+        font-size: clamp(48px, 14vw, 96px);
+    }
+}
