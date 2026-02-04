@@ -1,3 +1,4 @@
+const winSound = new Audio("correct.wav");
 let lastStarter = sessionStorage.getItem('lastStarter') || 'O';
 let turn = lastStarter === 'X' ? 'O' : 'X';
 sessionStorage.setItem('lastStarter', turn);
@@ -36,6 +37,7 @@ function updateScore() {
 function finishGame(player, a, b, c) {
   gameOver = true;
 
+  winSound.play();
   items[a].style.background =
   items[b].style.background =
   items[c].style.background = 'green';
@@ -91,3 +93,4 @@ function game(id) {
   winner();
   draw();
 }
+
