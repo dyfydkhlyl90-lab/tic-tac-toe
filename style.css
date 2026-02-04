@@ -47,7 +47,7 @@ h2 {
 /* العنوان */
 .game .title {
     height: 64px;
-    background-color: #2563eb;
+    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,5 +101,6 @@ h2 {
         font-size: clamp(48px, 14vw, 96px);
     }
 }
+
 
 
