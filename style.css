@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(135deg, #1e293b, #0f172a); */
-    background-color: darkblue;
+    background-color: black;
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
@@ -70,7 +70,7 @@ h2 {
 
 /* المربعات */
 .square {
-    background-color: darkblue;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,3 +101,4 @@ h2 {
         font-size: clamp(48px, 14vw, 96px);
     }
 }
+
